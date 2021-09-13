@@ -2,21 +2,37 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerControler : MonoBehaviour
+namespace WarmUp 
 {
-    private const string Horizontal = nameof(Horizontal);
-    private const string Vertical = nameof(Vertical);
-    private float _speed = 1;
-    private Vector3 _forward = new Vector3 (1, 0, 0);
-
-    
-    // Update is called once per frame
-    private void Update()
+    public class PlayerControler : MonoBehaviour
     {
-      
-        transform.Translate(Vector3.right * Input.GetAxis(Horizontal) * _speed * Time.deltaTime);
-        transform.Translate(Vector3.up * Input.GetAxis(Vertical) * _speed * Time.deltaTime);
+        private Rigidbody _rigidbody;
+        private const string Horizontal = nameof(Horizontal);
+        private const string Vertical = nameof(Vertical);
+        [SerializeField]
+        private float _speed = 1.0f;
 
+        private void Start()
+        {
+            _rigidbody = GetComponent<Rigidbody>();
+        }
 
+       
+        // Update is called once per frame
+        private void Update()
+        {
+            Movement();
+        }
+
+        protected void Movement()
+        {
+            float movementH = Input.GetAxis(Horizontal);
+            float movementV = Input.GetAxis(Vertical);
+
+            Vector3 movement = new Vector3(movementH, movementV, 0.0f);
+
+            _rigidbody.AddForce(movement * _speed);
+        }
     }
+
 }
