@@ -1,0 +1,181 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.10f1 (297d780c91bc) revision 2719096'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19042.1165; Version 2009; 64bit' Language: 'ru' Physical Memory: 16315 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+E:\unity\2020.3.10f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+E:/repository/Unity/3D Game Dev/WarmUp/WarmUp
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+56497
+Successfully changed project path to: E:/repository/Unity/3D Game Dev/WarmUp/WarmUp
+E:/repository/Unity/3D Game Dev/WarmUp/WarmUp
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 46.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.10f1 (297d780c91bc)
+[Subsystems] Discovering subsystems at path E:/unity/2020.3.10f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/repository/Unity/3D Game Dev/WarmUp/WarmUp/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1060 3GB (ID=0x1c02)
+    Vendor:   
+    VRAM:     2988 MB
+    Driver:   27.21.14.6677
+Initialize mono
+Mono path[0] = 'E:/unity/2020.3.10f1/Editor/Data/Managed'
+Mono path[1] = 'E:/unity/2020.3.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'E:/unity/2020.3.10f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56436
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: E:/unity/2020.3.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001266 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 49.97 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.120 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.003518 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 43.77 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.205 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.47 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2083 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 92.9 MB.
+System memory in use after: 92.8 MB.
+
+Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 2516.
+Total: 2.471800 ms (FindLiveObjects: 0.217100 ms CreateObjectMapping: 0.051600 ms MarkObjects: 2.061400 ms  DeleteObjects: 0.140500 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Code/I.cs
+  artifactKey: Guid(735a472d9ec4cf941b1c5a05eb11b2e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Code/I.cs using Guid(735a472d9ec4cf941b1c5a05eb11b2e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c75ddf031b94910ec01e2a7937f9b9bc') in 0.053628 seconds
+  Import took 0.057003 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.562032 seconds.
+  path: Assets/Code/I.cs
+  artifactKey: Guid(735a472d9ec4cf941b1c5a05eb11b2e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Code/I.cs using Guid(735a472d9ec4cf941b1c5a05eb11b2e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c75ddf031b94910ec01e2a7937f9b9bc') in 0.025586 seconds
+  Import took 0.028872 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.041167 seconds.
+  path: Assets/Code/InteractiveObject.cs
+  artifactKey: Guid(735a472d9ec4cf941b1c5a05eb11b2e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Code/InteractiveObject.cs using Guid(735a472d9ec4cf941b1c5a05eb11b2e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc0e7bc53c9a17d8dc1f8a10a950d760') in 0.038359 seconds
+  Import took 0.041598 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 27.341068 seconds.
+  path: Assets/Code/InteractiveObject.cs
+  artifactKey: Guid(735a472d9ec4cf941b1c5a05eb11b2e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Code/InteractiveObject.cs using Guid(735a472d9ec4cf941b1c5a05eb11b2e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4117176cfee87828f6bf3a6254889fe1') in 0.026445 seconds
+  Import took 0.029716 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.237777 seconds.
+  path: Assets/Code/InteractiveObject.cs
+  artifactKey: Guid(735a472d9ec4cf941b1c5a05eb11b2e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Code/InteractiveObject.cs using Guid(735a472d9ec4cf941b1c5a05eb11b2e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d416a5aa0a14458fc863a05479f69ec') in 0.025994 seconds
+  Import took 0.029575 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 40.196739 seconds.
+  path: Assets/Code/IAction.cs
+  artifactKey: Guid(99e0bfcbef796954f9ba9030a018b624) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Code/IAction.cs using Guid(99e0bfcbef796954f9ba9030a018b624) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fde305a5a6f464a18fa0a61a98899a11') in 0.028945 seconds
+  Import took 0.032215 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 80.902188 seconds.
+  path: Assets/Code/IAction.cs
+  artifactKey: Guid(99e0bfcbef796954f9ba9030a018b624) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Code/IAction.cs using Guid(99e0bfcbef796954f9ba9030a018b624) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a605f1ebda33689414266ad467424dab') in 0.025794 seconds
+  Import took 0.029578 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001759 seconds.
+  path: Assets/Code/IAction.cs
+  artifactKey: Guid(99e0bfcbef796954f9ba9030a018b624) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Code/IAction.cs using Guid(99e0bfcbef796954f9ba9030a018b624) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a605f1ebda33689414266ad467424dab') in 0.026436 seconds
+  Import took 0.030186 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 43.043293 seconds.
+  path: Assets/Code/IAction.cs
+  artifactKey: Guid(99e0bfcbef796954f9ba9030a018b624) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Code/IAction.cs using Guid(99e0bfcbef796954f9ba9030a018b624) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a711f02e8e12ba0f072d94d55215fb3f') in 0.025805 seconds
+  Import took 0.029105 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 27.551138 seconds.
+  path: Assets/Code/IAction.cs
+  artifactKey: Guid(99e0bfcbef796954f9ba9030a018b624) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Code/IAction.cs using Guid(99e0bfcbef796954f9ba9030a018b624) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ade6b6fa231b4787c5f07723e4b448c') in 0.026102 seconds
+  Import took 0.029403 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.516046 seconds.
+  path: Assets/Code/IInteractable.cs
+  artifactKey: Guid(352dfc757d418334ea36e741647f424d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Code/IInteractable.cs using Guid(352dfc757d418334ea36e741647f424d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa48210cdd76d891f99d0be0feddccfe') in 0.027796 seconds
+  Import took 0.031302 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 84.580889 seconds.
+  path: Assets/Code/IInteractable.cs
+  artifactKey: Guid(352dfc757d418334ea36e741647f424d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Code/IInteractable.cs using Guid(352dfc757d418334ea36e741647f424d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '811a4d483beceea983433e02adc8bd0c') in 0.025723 seconds
+  Import took 0.029049 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.140611 seconds.
+  path: Assets/Code/IInteractable.cs
+  artifactKey: Guid(352dfc757d418334ea36e741647f424d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Code/IInteractable.cs using Guid(352dfc757d418334ea36e741647f424d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '811a4d483beceea983433e02adc8bd0c') in 0.040411 seconds
+  Import took 0.043841 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 347.500430 seconds.
+  path: Assets/Code/IInteractable.cs
+  artifactKey: Guid(352dfc757d418334ea36e741647f424d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Code/IInteractable.cs using Guid(352dfc757d418334ea36e741647f424d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '263c849ca8bbc20def1d6723ecd9e750') in 0.026148 seconds
+  Import took 0.029653 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
