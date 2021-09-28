@@ -7,8 +7,7 @@ namespace WarmUp
     public class PlayerFactory : IPlayerFactory
     {
         private readonly string _playerName;
-        private const string _sphere = "Sphere";
-
+        
         public PlayerFactory(string playerName) 
         {
             _playerName = playerName;

@@ -5,12 +5,13 @@ namespace WarmUp
 {
     public class GameStarter : MonoBehaviour
     {
+        [SerializeField] private PlayerData _playerData;
         private Controllers _controllers;
 
         private void Start()
         {
             _controllers = new Controllers();
-            new GameInitialization(_controllers);
+            new GameInitialization(_controllers, _playerData);
             _controllers.Initialization();
         }
 

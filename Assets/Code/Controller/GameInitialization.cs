@@ -5,12 +5,15 @@ namespace WarmUp
 {
     internal sealed class GameInitialization
     {
-        public GameInitialization(Controllers controllers)
+        
+        public GameInitialization(Controllers controllers, PlayerData playerData)
         {
             Camera camera = Camera.main;
             var inputInitialization = new InputInitialization();
-            var playerFactory = new PlayerFactory("Player");
+            var playerFactory = new PlayerFactory(playerData.PlayerName);
+            var startCreator = new StartCreator("Start");
             var playerInitialization = new PlayerInitialization(playerFactory);
+            var levelInitialization = new LevelInitialization(startCreator);
             controllers.Add(inputInitialization);
             controllers.Add(playerInitialization);
             controllers.Add(new InputController(inputInitialization.GetInput()));
