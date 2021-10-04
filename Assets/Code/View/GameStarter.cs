@@ -1,21 +1,19 @@
-
 using UnityEngine;
 
 namespace WarmUp 
 {
-    public class GameStarter : MonoBehaviour
+    public sealed class GameStarter : MonoBehaviour
     {
-        [SerializeField] private PlayerData _playerData;
+        [SerializeField] Data _data;
         private Controllers _controllers;
-
-        private void Start()
+        void Start()
         {
             _controllers = new Controllers();
-            new GameInitialization(_controllers, _playerData);
-            _controllers.Initialization();
+            new GameInitialization(_controllers, _data);
+            _controllers.Initialize();
         }
 
-        private void Update()
+        void Update()
         {
             var deltaTime = Time.deltaTime;
             _controllers.Execute(deltaTime);
@@ -29,8 +27,7 @@ namespace WarmUp
 
         private void OnDestroy()
         {
-            _controllers.CleanUp();
+            _controllers.Cleanup();
         }
     }
-
 }
