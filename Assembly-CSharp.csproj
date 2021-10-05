@@ -8,7 +8,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <ProjectGuid>{2D3E7C9C-5949-E884-C24A-8CFB429C8A2D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -56,6 +57,7 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Code\Controller\CameraController.cs" />
     <Compile Include="Assets\Code\Interface\IDataLevel.cs" />
     <Compile Include="Assets\Code\Controller\GameInitialization.cs" />
     <Compile Include="Assets\Code\Data\LevelData.cs" />
@@ -70,6 +72,11 @@
     <Compile Include="Assets\Code\Interface\ICleanup.cs" />
     <Compile Include="Assets\Code\Controller\PlayerInitialization.cs" />
     <Compile Include="Assets\Code\Interface\ILateExecute.cs" />
+    <Compile Include="Assets\Code\Interface\IUserProxy.cs" />
+    <Compile Include="Assets\Code\Managers\AxisManager.cs" />
+    <Compile Include="Assets\Code\UserInput\InputHorizontal.cs" />
+    <Compile Include="Assets\Code\UserInput\InputJump.cs" />
+    <Compile Include="Assets\Code\View\FinishPlatformView.cs" />
     <Compile Include="Assets\Code\View\GameStarter.cs" />
     <Compile Include="Assets\Code\Controller\LevelInitialization.cs" />
     <Compile Include="Assets\Code\Data\Data.cs" />
@@ -77,6 +84,7 @@
     <Compile Include="Assets\Code\Interface\ISetPlatformPosition.cs" />
     <Compile Include="Assets\Code\Interface\IPlatformBuilder.cs" />
     <Compile Include="Assets\Code\Controller\PlatformBuilder.cs" />
+    <Compile Include="Assets\Code\View\PlayerView.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
