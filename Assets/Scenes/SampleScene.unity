@@ -311,7 +311,7 @@ GameObject:
   - component: {fileID: 617194466}
   - component: {fileID: 617194467}
   m_Layer: 0
-  m_Name: GameController
+  m_Name: EnteryPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -343,7 +343,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6af87ff450fef864eaea1203bf9e1993, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _data: {fileID: 0}
 --- !u!114 &617194467
 MonoBehaviour:
   m_ObjectHideFlags: 0
