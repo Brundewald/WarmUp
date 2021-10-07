@@ -4,8 +4,8 @@ namespace WarmUp
 {
     public sealed class InputInitialization:IInitialize
     {
-        private IUserProxy _inputHorizontal;
-        private IUserProxy _inputJump;
+        private readonly IUserProxy _inputHorizontal;
+        private readonly IUserProxy _inputJump;
 
         public InputInitialization() 
         {

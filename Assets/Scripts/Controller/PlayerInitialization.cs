@@ -5,7 +5,7 @@ namespace WarmUp
     public sealed class PlayerInitialization : IInitialize
     {
         private readonly IPlayerFactory _playerFactory;
-        private Transform _player;
+        private readonly Transform _player;
 
         public PlayerInitialization(IPlayerFactory playerFactory, Vector3 playerPosition, Vector3 offset) 
         {

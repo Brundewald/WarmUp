@@ -61,12 +61,14 @@
     <Compile Include="Assets\Scripts\Controller\GameInitialization.cs" />
     <Compile Include="Assets\Scripts\Data\LevelData.cs" />
     <Compile Include="Assets\Scripts\Interface\IUserProxy.cs" />
+    <Compile Include="Assets\Scripts\Controller\InputInitialization.cs" />
     <Compile Include="Assets\Scripts\Data\PlayerData.cs" />
+    <Compile Include="Assets\Scripts\Interface\IPlayerFactory.cs" />
     <Compile Include="Assets\Scripts\Interface\IDataPlayer.cs" />
     <Compile Include="Assets\Scripts\Interface\IController.cs" />
     <Compile Include="Assets\Scripts\UserInput\InputJump.cs" />
     <Compile Include="Assets\Scripts\Interface\IPlatformBuilder.cs" />
-    <Compile Include="Assets\Scripts\Controller\LevelBuilder.cs" />
+    <Compile Include="Assets\Scripts\Controller\LevelFactory.cs" />
     <Compile Include="Assets\Scripts\UserInput\InputHorizontal.cs" />
     <Compile Include="Assets\Scripts\Controller\Controllers.cs" />
     <Compile Include="Assets\Scripts\View\FinishPlatformView.cs" />
@@ -75,20 +77,20 @@
     <Compile Include="Assets\Scripts\Controller\SetPlatformPosition.cs" />
     <Compile Include="Assets\Scripts\Interface\IInitialize.cs" />
     <Compile Include="Assets\Scripts\Managers\AxisManager.cs" />
-    <Compile Include="Assets\Scripts\Interface\ILevelBuilder.cs" />
+    <Compile Include="Assets\Scripts\Controller\PlayerPositionReseter.cs" />
+    <Compile Include="Assets\Scripts\Controller\PlayerFactory.cs" />
+    <Compile Include="Assets\Scripts\Interface\ILevelFactory.cs" />
     <Compile Include="Assets\Scripts\Interface\ICleanup.cs" />
     <Compile Include="Assets\Scripts\Controller\CameraController.cs" />
     <Compile Include="Assets\Scripts\Controller\PlayerInitialization.cs" />
     <Compile Include="Assets\Scripts\Interface\ILateExecute.cs" />
     <Compile Include="Assets\Scripts\Controller\PlatformBuilder.cs" />
+    <Compile Include="Assets\Scripts\Controller\MovementLogic.cs" />
     <Compile Include="Assets\Scripts\View\EnteryPoint.cs" />
+    <Compile Include="Assets\Scripts\Controller\InputController.cs" />
     <Compile Include="Assets\Scripts\Controller\LevelInitialization.cs" />
     <Compile Include="Assets\Scripts\Data\Data.cs" />
-    <Compile Include="Assets\Scripts\Interface\IPlayerFactory.cs" />
-    <Compile Include="Assets\Scripts\Controller\PlayerFactory.cs" />
-    <Compile Include="Assets\Scripts\Controller\MovementController.cs" />
-    <Compile Include="Assets\Scripts\Controller\InputController.cs" />
-    <Compile Include="Assets\Scripts\Controller\InputInitialization.cs" />
+    <Compile Include="Assets\Scripts\Controller\EndGameLogic.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

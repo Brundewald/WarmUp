@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace WarmUp
 {
@@ -15,7 +14,7 @@ namespace WarmUp
 
         public Transform CreatePlayer()
         {    
-            GameObject player = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+            var player = GameObject.CreatePrimitive(PrimitiveType.Sphere);
             player.AddComponent<Rigidbody>();
             player.AddComponent<PlayerView>();
             player.name = _playerData.Name;

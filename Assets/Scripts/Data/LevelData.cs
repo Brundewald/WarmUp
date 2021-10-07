@@ -5,8 +5,9 @@ namespace WarmUp
     [CreateAssetMenu(fileName = "LevelData", menuName = "Data/LevelData")]
     public sealed class LevelData : ScriptableObject, IDataLevel
     {        
-        private string _start = "Start";
-        private string _finish = "Finish";
+        private const string _start = "Start";
+        private const string _finish = "Finish";
+
         [SerializeField] private float _platformQuantity;
         [SerializeField] private float _platformOffsetX;
         [SerializeField] private Vector3 _startPlatformPosition;

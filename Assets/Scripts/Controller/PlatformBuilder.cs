@@ -25,7 +25,7 @@ namespace WarmUp
 
         private Transform BuildStartPlatform() 
         {
-            GameObject start = GameObject.CreatePrimitive(PrimitiveType.Cube);
+            var start = GameObject.CreatePrimitive(PrimitiveType.Cube);
             start.GetComponent<Transform>().localScale = _levelData.PlatformScale;
             start.GetComponent<MeshRenderer>().material = _levelData.StartMaterial;
             start.name = _levelData.Start;
@@ -35,10 +35,11 @@ namespace WarmUp
 
         private Transform BuildFinishPlatform()
         {
-            GameObject finish = GameObject.CreatePrimitive(PrimitiveType.Cube);
+            var finish = GameObject.CreatePrimitive(PrimitiveType.Cube);
             finish.GetComponent<Transform>().localScale = _levelData.PlatformScale;
             finish.GetComponent<MeshRenderer>().material = _levelData.FinishMaterial;
             finish.AddComponent<FinishPlatformView>();
+            finish.AddComponent<SphereCollider>().isTrigger = true;
             finish.name = _levelData.Finish;
             _finishPlatform = finish.transform;
             return _finishPlatform;
@@ -48,7 +49,7 @@ namespace WarmUp
         {
             _allWayPlatforms = new List<Transform>();
 
-            for (int index = 0; index < _levelData.PlatformQuantity; index++) 
+            for (var index = 0; index < _levelData.PlatformQuantity; index++) 
             {
                 if (_wayPlatform == null) BuildWayPlatform();
                 else
@@ -61,7 +62,7 @@ namespace WarmUp
         }
         private Transform BuildWayPlatform ()
         {
-            GameObject wayPlatform = GameObject.CreatePrimitive(PrimitiveType.Cube);
+            var wayPlatform = GameObject.CreatePrimitive(PrimitiveType.Cube);
             wayPlatform.GetComponent<Transform>().localScale = _levelData.PlatformScale;
             wayPlatform.GetComponent<MeshRenderer>().material = _levelData.WayPlatformMaterial;
             _wayPlatform = wayPlatform.transform;

@@ -3,9 +3,9 @@ namespace WarmUp
 {
     public sealed class LevelInitialization : IInitialize
     {
-        private readonly ILevelBuilder _levelBuilder;
+        private readonly ILevelFactory _levelBuilder;
 
-        public LevelInitialization(ILevelBuilder levelBuilder) 
+        public LevelInitialization(ILevelFactory levelBuilder) 
         {
             _levelBuilder = levelBuilder;
             _levelBuilder.BuildLevel();
