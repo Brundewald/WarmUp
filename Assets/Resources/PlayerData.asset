@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _playerName: Player
   _playerSpeed: 10
-  _playerStartPosition: {x: -5, y: 3, z: 0}
+  _jumpForce: 10

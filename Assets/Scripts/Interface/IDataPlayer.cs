@@ -6,5 +6,6 @@ namespace WarmUp
     {
         Vector3 Offset { get; }
         float Speed { get; }
+        float JumpForce { get; }
     }
 }
