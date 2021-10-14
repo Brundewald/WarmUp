@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Controller;
+using UnityEngine;
 
 namespace WarmUp
 {
@@ -14,6 +15,7 @@ namespace WarmUp
             var levelBuilder = new LevelFactory(platformBuilder, setPlatformPosition);
             var levelInitialization = new LevelInitialization(levelBuilder);
             var playerInitialization = new PlayerInitialization(playerFactory, data.Level.StartPlatformPosition, data.Player.Offset);
+            var displayEndGame = new DisplayEndGame();
             controllers.Add(inputInitialization);
             controllers.Add(levelInitialization);
             controllers.Add(playerInitialization);
@@ -21,7 +23,7 @@ namespace WarmUp
             controllers.Add(new MovementLogic(inputInitialization.GetInput(), playerInitialization.GetPlayer(), data.Player));
             controllers.Add(new PlayerPositionReseter(playerInitialization.GetPlayer(), data.Level.StartPlatformPosition, data.Player.Offset));
             controllers.Add(new CameraController(playerInitialization.GetPlayer(), camera.transform));
-            controllers.Add(new EndGameLogic());
+            controllers.Add(new EndGameLogic(displayEndGame));
         }
     }
 }

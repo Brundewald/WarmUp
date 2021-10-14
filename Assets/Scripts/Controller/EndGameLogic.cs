@@ -1,38 +1,29 @@
+using Controller;
 using UnityEngine;
 
 namespace WarmUp 
 {
     public class EndGameLogic : ILateExecute
     {
-        private const float _rayDistance = 0.1f;
-        private readonly Vector3 _rayDirection = new Vector3(0f,-1f, 0f);
-        private readonly FinishPlatformView _finishPlatform;
-        private readonly Transform _playerTransform;
-        private readonly PlayerView _player;
-        private readonly Collider _finishCollider;
+        private readonly PlayerView _playerView;
+        private readonly DisplayEndGame _displayEndGame;
+        private bool _isDisplayOn = false;
 
-        public EndGameLogic() 
+        public EndGameLogic(DisplayEndGame displayEndGame)
         {
-            _player = Object.FindObjectOfType<PlayerView>();
-            _finishPlatform = Object.FindObjectOfType<FinishPlatformView>();
-            _playerTransform = _player.GetComponent<Transform>();
-           _finishCollider = _finishPlatform.GetComponent<Collider>();
+            _displayEndGame = displayEndGame;
+            _playerView = Object.FindObjectOfType<PlayerView>();
         }
 
         public void LateExecute(float deltaTime)
         {
-            FinishTrigger();
-        }
-
-        private void FinishTrigger()
-        {
-            Ray ray = new Ray(_playerTransform.position, _rayDirection);
-
-            if (Physics.Raycast(ray, _rayDistance))
+            if (_playerView.IsFinished && !_isDisplayOn)
             {
-               Debug.Log("You Win");
+                _displayEndGame.ShowEndGameDisplay();
+                _isDisplayOn = true;
             }
         }
+       
     }
 
 }
