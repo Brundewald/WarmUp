@@ -7,10 +7,12 @@ namespace WarmUp
     {
         [SerializeField] private string _playerName;
         [SerializeField] private float _playerSpeed;
+        [SerializeField] private float _playerJumpForce;
         [SerializeField] private readonly Vector3 _playerOffset = new Vector3(0, 3f,0);
 
         public string Name => _playerName;
         public float Speed => _playerSpeed;
+        public float JumpForce => _playerJumpForce;
         public Vector3 Offset => _playerOffset;
     }
 }

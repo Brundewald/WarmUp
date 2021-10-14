@@ -6,6 +6,8 @@ namespace WarmUp
     {
         private readonly Transform _player;
         private readonly IDataPlayer _playerData;
+        private readonly PlayerView _playerView;
+        private Rigidbody _playerRigidbody;
         private float _horizontal;
         private float _jump;
         private Vector3 _movementVector;
@@ -18,6 +20,8 @@ namespace WarmUp
             _playerData = playerData;
             _horizontalInputProxy = input.inputHorizontal;
             _jumpInputProxy = input.inputJump;
+            _playerView = player.GetComponent<PlayerView>();
+            _playerRigidbody = player.GetComponent<Rigidbody>();
             _horizontalInputProxy.OnAxisChange += HorizontalInputProxy_OnAxisChange;
             _jumpInputProxy.OnAxisChange += JumpInputProxy_OnAxisChange;
         }
@@ -31,11 +35,17 @@ namespace WarmUp
             _jump = value;
         }
 
-        public void Execute(float deltaTime) 
+        public void Execute(float deltaTime)
         {
+            var doJump = _jump > 0;
             var speed = deltaTime * _playerData.Speed;
-            _movementVector.Set(_horizontal * speed, _jump  * speed, 0);
+            _movementVector.Set(_horizontal * speed, 0, 0);
             _player.localPosition += _movementVector;
+
+            if (_playerView.OnGround && doJump)
+            {
+                _playerRigidbody.AddForce(0, _playerData.JumpForce, 0);
+            }
         }
 
         public void Cleanup() 
