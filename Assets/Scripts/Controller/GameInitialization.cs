@@ -14,7 +14,6 @@ namespace WarmUp
             var levelBuilder = new LevelFactory(platformBuilder, setPlatformPosition);
             var levelInitialization = new LevelInitialization(levelBuilder);
             var playerInitialization = new PlayerInitialization(playerFactory, data.Level.StartPlatformPosition, data.Player.Offset);
-            var endGameLogic = new EndGameLogic();
             controllers.Add(inputInitialization);
             controllers.Add(levelInitialization);
             controllers.Add(playerInitialization);

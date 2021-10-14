@@ -19,7 +19,8 @@ namespace WarmUp
             player.AddComponent<PlayerView>();
             player.name = _playerData.Name;
             var rigidbody = player.GetComponent<Rigidbody>();
-            rigidbody.freezeRotation = true;           
+            rigidbody.freezeRotation = true;
+            rigidbody.interpolation = RigidbodyInterpolation.Extrapolate;
             _player = player.transform;
             return _player;
         }
