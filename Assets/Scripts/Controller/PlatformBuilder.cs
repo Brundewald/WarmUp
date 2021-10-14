@@ -10,6 +10,7 @@ namespace WarmUp
         private Transform _finishPlatform;
         private Transform _wayPlatform;
         private List<Transform> _allWayPlatforms;
+        private GameObject _background;
 
         public PlatformBuilder(LevelData levelData) 
         {
@@ -22,6 +23,7 @@ namespace WarmUp
             BuildFinishPlatform();
             BuildAllWayPlatforms();
         }
+
 
         private Transform BuildStartPlatform() 
         {
