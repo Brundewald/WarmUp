@@ -56,11 +56,12 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Controller\EndGameLogic.cs" />
+    <Compile Include="Assets\Scripts\Controller\EndGameHandler.cs" />
     <Compile Include="Assets\Scripts\Interface\ISetPlatformPosition.cs" />
     <Compile Include="Assets\Scripts\Interface\IDataLevel.cs" />
     <Compile Include="Assets\Scripts\Controller\GameInitialization.cs" />
     <Compile Include="Assets\Scripts\Data\LevelData.cs" />
+    <Compile Include="Assets\Scripts\Controller\DisplayEndGame.cs" />
     <Compile Include="Assets\Scripts\Interface\IUserProxy.cs" />
     <Compile Include="Assets\Scripts\Controller\InputInitialization.cs" />
     <Compile Include="Assets\Scripts\Data\PlayerData.cs" />
@@ -86,12 +87,11 @@
     <Compile Include="Assets\Scripts\Controller\PlayerInitialization.cs" />
     <Compile Include="Assets\Scripts\Interface\ILateExecute.cs" />
     <Compile Include="Assets\Scripts\Controller\PlatformBuilder.cs" />
-    <Compile Include="Assets\Scripts\Controller\MovementLogic.cs" />
+    <Compile Include="Assets\Scripts\Controller\MovementHandler.cs" />
     <Compile Include="Assets\Scripts\View\EnteryPoint.cs" />
     <Compile Include="Assets\Scripts\Controller\InputController.cs" />
     <Compile Include="Assets\Scripts\Controller\LevelInitialization.cs" />
     <Compile Include="Assets\Scripts\Data\Data.cs" />
-    <Compile Include="Assets\Scripts\Controller\DisplayEndGame.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
